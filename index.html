@@ -88,15 +88,16 @@
                 <fieldset>
                     <legend>Feedback</legend>
 
+                    <p>Did you go to the meeting?</p>
                     <input type="checkbox" id="opt1" name="opt1" value="Went">
                     <label for="opt1"> I went to the meeting</label><br>
                     <input type="checkbox" id="opt2" name="opt2" value="Going">
                     <label for="opt2"> I am going to the next one</label><br>
                     <input type="checkbox" id="opt3" name="opt3" value="None">
-                    <label for="opt3"> None of the above</label><br>
+                    <label for="opt3"> None of the above</label><br><br><br>
 
                     <label for="date">Date today:</label>
-                    <input type="date" id="date" name="date"><br>
+                    <input type="date" id="date" name="date"><br><br><br>
 
                     <label for="rating">Rate the meeting (1-10):</label><br>
                     <input type="text" id="rating" name="rating" value="10"><br>
@@ -105,7 +106,7 @@
                     <input type="radio" id="again" name="again" value="10">
                     <label for="again">10</label><br>
                     <input type="radio" id="again" name="again" value="10">
-                    <label for="again">10</label><br>
+                    <label for="again">10</label><br><br><br>
                     
                     <label for="sure">Are you sure?:</label>
                     <select name="sure" id="sure">
@@ -117,7 +118,8 @@
                     <br><br>
 
                     <label for="open">Open-ended feedback:</label><br>
-                    <textarea id="open" name="open" rows="2" cols="30">It was awesome!</textarea><br>
+                    <textarea id="open" name="open" rows="2" cols="30">It was awesome!</textarea>
+                    <br><br><br>
 
                     <label for="fav">Choose your favourite snack:</label>
                     <input list="fav" name="fav" id="fav">
@@ -127,11 +129,11 @@
                         <option value="Chips">
                         <option value="Smth else">
                     </datalist>
-
+                    <br><br><br>
                     <input type="submit" value="Submit">
                 </fieldset>
             </form> 
-
+            <br><br>
             <button type="button" onclick="alert('Have a nice day!')">Nice button!</button>
         </section>       
     </main>
