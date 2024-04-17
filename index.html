@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>First Team Meeting</title>
+    <meta charset="UTF-8">
+    <meta name="topic" content="First Team Meeting">
+    <meta name="author" content="Anya Chernova">
+    <link rel="favicon" href="https://developer.mozilla.org/en-US/docs/Glossary/Favicon">
+  </head>
+  <body>
+    <header>
+        <h1>Header</h1>
+        <p>Anya's Lab 2</p>
+        <p>04/16/2024</p>
+    </header>
+    <main>
+        <h1>First Team Meeting</h1>
+        <h2>04/14/2024</h2>
+        <hr>
+        <section>
+            <h3>Attendance List</h3>
+                <p>Total people present:</p>
+                <div class="counter"></div>
+                <ul>
+                    <li><span style="color:orange"></span>Someone1</li>
+                    <li><span style="color:grey"></span>Someone2</li>
+                    <li><span style="color:whitesmoke"></span>Someone3</li>
+                </ul>
+        </section>
+        <section>
+            <h3>Agenda</h3>
+                <ol>
+                    <li>Unfinished from Last Meeting</li>
+                    <li>New Tasks</li>
+                    <li>Team Bonding</li>
+                    <li>Working on the Intro Video</li>
+                    <li>Working on the Team Contract</li>
+                    <li>Conclusion</li>
+                </ol>
+        </section>
+        <section>
+            <h3>Unfinished from Last Meeting</h3>
+                <p>Nothing, because it's the first meeting</p>
+        </section>
+        <section>
+            <h3>Team Bonding</h3>
+                <p>We got to know each other! <em>Exciting!</em></p>
+        </section>
+        <section>
+            <h3>Working on the Intro Video</h3>
+                <p>Diagram of our video plan:<br>
+                    Decided on the into video.<br>
+                    Here is an <i>example</i>:</p>
+                <video width="400" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+                <p>Also <i>example video audio</i>:</p>
+                <audio controls>
+                    <source src="assets/audio.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+        </section>
+        <section>
+            <h3>Working on Team Contract</h3>
+                <p>Discussed terms for our work together.
+                    This document can be found on our github:</p>
+                    <a href="https://github.com/Ascher176">MyGitHub</a>
+                <p><strong>TODO: continue working on the contract</strong></p>
+        </section>
+        <section>
+            <h3>Conclusion</h3>
+                <p>We said bye to each other</p>
+                <p>Our <b>awesome</b> picture btw:</p>
+                <img src="assets/pic.png" alt="awesome picture"/>
+        </section>
+        <section>
+            <details>
+                <summary>Meeting Summary</summary>
+                <p><em>The first meeting went awesome!</em><br>
+                <strong>TODO: continue to work on the contract</strong></p>
+
+            </details>  
+        </section> 
+        <section>
+            <h3>Miscellaneous</h3>
+            <form action="/responses.php">
+                <fieldset>
+                    <legend>Feedback</legend>
+
+                    <input type="checkbox" id="opt1" name="opt1" value="Went">
+                    <label for="opt1"> I went to the meeting</label><br>
+                    <input type="checkbox" id="opt2" name="opt2" value="Going">
+                    <label for="opt2"> I am going to the next one</label><br>
+                    <input type="checkbox" id="opt3" name="opt3" value="None">
+                    <label for="opt3"> None of the above</label><br>
+
+                    <label for="date">Date today:</label>
+                    <input type="date" id="date" name="date"><br>
+
+                    <label for="rating">Rate the meeting (1-10):</label><br>
+                    <input type="text" id="rating" name="rating" value="10"><br>
+
+                    <p>Think again:</p>
+                    <input type="radio" id="again" name="again" value="10">
+                    <label for="again">10</label><br>
+                    <input type="radio" id="again" name="again" value="10">
+                    <label for="again">10</label><br>
+                    
+                    <label for="sure">Are you sure?:</label>
+                    <select name="sure" id="sure">
+                        <option value="y1">Yes!</option>
+                        <option value="y2">Of course</option>
+                        <option value="y3">Yeah</option>
+                        <option value="y4">Absolutely</option>
+                    </select>
+                    <br><br>
+
+                    <label for="open">Open-ended feedback:</label><br>
+                    <textarea id="open" name="open" rows="2" cols="30">It was awesome!</textarea><br>
+
+                    <label for="fav">Choose your favourite snack:</label>
+                    <input list="fav" name="fav" id="fav">
+                    <datalist id="fav">
+                        <option value="Chocolate">
+                        <option value="Cookies">
+                        <option value="Chips">
+                        <option value="Smth else">
+                    </datalist>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form> 
+
+            <button type="button" onclick="alert('Have a nice day!')">Nice button!</button>
+        </section>       
+    </main>
+    <footer>
+        <h1>Footer</h1>
+        <p>Anya's Lab 2</p>
+        <p>04/16/2024</p>
+    </header>
+  </body>
+</html>
