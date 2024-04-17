@@ -53,12 +53,10 @@
                     Here is an <i>example</i>:</p>
                 <video width="400" controls>
                     <source src="assets/video.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
                 </video>
                 <p>Also <i>example video audio</i>:</p>
                 <audio controls>
                     <source src="assets/audio.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
                 </audio>
         </section>
         <section>
@@ -94,19 +92,21 @@
                     <input type="checkbox" id="opt2" name="opt2" value="Going">
                     <label for="opt2"> I am going to the next one</label><br>
                     <input type="checkbox" id="opt3" name="opt3" value="None">
-                    <label for="opt3"> None of the above</label><br><br><br>
+                    <label for="opt3"> None of the above</label><br><br>
 
                     <label for="date">Date today:</label>
-                    <input type="date" id="date" name="date"><br><br><br>
+                    <input type="date" id="date" name="date"><br><br>
 
                     <label for="rating">Rate the meeting (1-10):</label><br>
-                    <input type="text" id="rating" name="rating" value="10"><br>
+                    <input type="text" id="rating" name="rating" value="10"><br><br>
 
                     <p>Think again:</p>
                     <input type="radio" id="again" name="again" value="10">
                     <label for="again">10</label><br>
                     <input type="radio" id="again" name="again" value="10">
-                    <label for="again">10</label><br><br><br>
+                    <label for="again">10</label><br>
+                    <input type="radio" id="again" name="again" value="10">
+                    <label for="again">10</label><br><br>
                     
                     <label for="sure">Are you sure?:</label>
                     <select name="sure" id="sure">
@@ -119,17 +119,19 @@
 
                     <label for="open">Open-ended feedback:</label><br>
                     <textarea id="open" name="open" rows="2" cols="30">It was awesome!</textarea>
-                    <br><br><br>
+                    <br><br>
 
                     <label for="fav">Choose your favourite snack:</label>
-                    <input list="fav" name="fav" id="fav">
-                    <datalist id="fav">
+                    <input list="snacks" name="fav" id="fav">
+                    <datalist id="snacks">
                         <option value="Chocolate">
                         <option value="Cookies">
+                        <option value="Chrome">
                         <option value="Chips">
                         <option value="Smth else">
                     </datalist>
-                    <br><br><br>
+                    <br><br>
+
                     <input type="submit" value="Submit">
                 </fieldset>
             </form> 
