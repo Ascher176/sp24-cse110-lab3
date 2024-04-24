@@ -1,12 +1,19 @@
+/* Variables */
+:root {
+    --main-color: #8bc5eb;
+    --extra-color: #ed968d;
+}
+
 /* Body background */
 body {
-    background-color: rgb(64, 60, 60); /* Gray background */
+    /* Variable not defined so using fallback */
+    background-color: var(--background-color, rgb(64, 60, 60)); /* Gray background */
     color: #c7c4c4; /* Almost white text */
 }
 
 /* Header styles */
 header {
-    background-color: 'black'; /* Black background*/
+    background-color: black; /* Black background*/
     color: hsl(0, 1%, 51%); /* Gray-ish text */
 }
 
@@ -22,10 +29,15 @@ h1, h2, h3 {
 
 /* Links */
 a {
-    color: color-mix(luminosity, red 70%, blue 30%);
+    color: color-mix(luminosity, rgb(237, 150, 150) 70%, rgb(163, 163, 246) 30%);
 }
 
 a:hover {
     text-decoration: underline;
-    color: color-mix(luminosity, red 50%, blue 50%);
+    color: color-mix(luminosity, rgb(241, 171, 171) 50%, rgb(176, 176, 247) 50%);
+}
+
+button {
+    /* Use main color variable, fallback not used */
+    background-color: var(--main-color, orange);
 }
