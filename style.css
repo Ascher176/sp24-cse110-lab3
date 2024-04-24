@@ -112,3 +112,19 @@ img {
         width: 100%;
     }
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.child {
+    flex: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
