@@ -1,0 +1,31 @@
+/* Body background */
+body {
+    background-color: rgb(64, 60, 60); /* Gray background */
+    color: #c7c4c4; /* Almost white text */
+}
+
+/* Header styles */
+header {
+    background-color: 'black'; /* Black background*/
+    color: hsl(0, 1%, 51%); /* Gray-ish text */
+}
+
+/* Footer styles */
+footer {
+    background-color: 'black'; /* Black background*/
+    color: hsl(0, 1%, 51%); /* Gray-ish text */
+}
+
+h1, h2, h3 {
+    color: color(display-p3 1 1 1);
+}
+
+/* Links */
+a {
+    color: color-mix(luminosity, red 70%, blue 30%);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: color-mix(luminosity, red 50%, blue 50%);
+}
