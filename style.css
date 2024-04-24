@@ -4,6 +4,13 @@
     --extra-color: #ed968d;
 }
 
+/* Universal Selector */
+* {
+    /* Variable not defined so using fallback */
+    background-color: var(--background-color, rgb(64, 60, 60)); /* Gray background */
+    color: #c7c4c4; /* Almost white text */
+}
+
 .jersey-10-regular {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
@@ -12,10 +19,6 @@
 
 /* Body background */
 body {
-    /* Variable not defined so using fallback */
-    background-color: var(--background-color, rgb(64, 60, 60)); /* Gray background */
-    color: #c7c4c4; /* Almost white text */
-
     /* Units */
     font-size: 16px; 
     line-height: 1.5rem; 
@@ -50,6 +53,10 @@ footer {
 
 h1, h2, h3 {
     color: color(display-p3 1 1 1);
+}
+
+h1:has(+ h2) {
+    margin: 0 0 0.25rem 0;
 }
 
 /* Links */
@@ -128,3 +135,58 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
+
+.grid-item {
+    border: 1px solid #f4cbcb;
+    padding: 10px;
+}
+
+#element-with-ID {
+    background-color: #371a1a;
+    color: #f47373;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+a[target] {
+    background-color: rgb(98, 184, 251);
+}
+
+/* Descendant */
+form input {
+    margin-bottom: 10px;
+}
+
+/* Child */
+.container > .child {
+    background-color: rgb(181, 178, 178);
+}
+
+/* General */
+.child ~ .child {
+    border: var(--main-color);
+}
+
+/* Adjacent */
+.child + .child {
+    margin-left: 10pt;
+}
+
+/* Combining Two*/
+header.container {
+    background-color: var(--main-color);
+    color: rgb(182, 174, 245);
+}
+
+.gslink {
+    font-size: 1rem;
+    & > a {
+      color: rgb(248, 157, 141);
+      &:hover,
+      &:focus {
+        color: rgb(162, 202, 241);
+        background-color: rgb(237, 189, 180);
+      }
+    }
+  }
