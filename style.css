@@ -52,7 +52,7 @@ footer {
 }
 
 h1, h2, h3 {
-    color: color(display-p3 1 1 1);
+    color: color(display-p3 1 0.5 0 / .5);
 }
 
 h1:has(+ h2) {
@@ -62,12 +62,12 @@ h1:has(+ h2) {
 /* Links */
 a {
     text-decoration: none;
-    color: color-mix(luminosity, rgb(242, 196, 196) 70%, rgb(188, 188, 237) 30%);
+    color: color-mix(in lch, plum, pink);
 }
 
 a:hover {
     text-decoration: underline;
-    color: color-mix(luminosity, rgb(241, 171, 171) 50%, rgb(176, 176, 247) 50%);
+    color: color-mix(in lch, plum, pink);
 }
 
 form {
@@ -160,7 +160,8 @@ form input {
 
 /* Child */
 .container > .child {
-    background-color: rgb(181, 178, 178);
+    background-color: rgb(100, 142, 176);
+    color: black;
 }
 
 /* General */
