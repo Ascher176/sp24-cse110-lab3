@@ -42,7 +42,6 @@ footer {
 }
 
 h1, h2, h3 {
-    margin: auto;
     color: color(display-p3 1 1 1);
 }
 
@@ -63,9 +62,18 @@ form {
     border-style: solid;
     border-color: var(--extra-color);
     padding: 20px;
+
+    text-decoration: none;
+    text-align: center;
 }
 
 button {
     /* Use main color variable, fallback not used */
+    margin: auto;
     background-color: var(--main-color, orange);
+}
+
+p {
+    margin-bottom: 1em;
+    text-align: justify;
 }
